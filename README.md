@@ -10,7 +10,7 @@
 List any resources used here, or simply put `N/A` if not applicable.
 
 Instructions PDF.   
-Lab 6.  
+Lab 6 instructions and implementation (https://github.com/Rabeea-S/CMPUT301-Lab6.git).   
 
 ## Verbal Collaboration
 None
