@@ -4,6 +4,7 @@ public class City {
     private String city;
     private String province;
 
+    // city uniquely identified by its name and its province
     public City(String city, String province){
         this.city = city;
         this.province = province;
