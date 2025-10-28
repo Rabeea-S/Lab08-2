@@ -26,4 +26,23 @@ public class CustomListTest {
         City city = new City("Calgary", "Alberta");
         assertFalse(cityList.hasCity(city));
     }
+
+    @Test
+    void testDelete() {
+        CustomList cityList = mockCityList();
+        assertTrue(cityList.hasCity(mockCity()));
+        cityList.deleteCity(mockCity());
+        assertFalse(cityList.hasCity(mockCity()));
+    }
+
+    @Test
+    void testDeleteException() {
+        CustomList cityList = mockCityList();
+        City city = new City("Calgary", "Alberta");
+        assertFalse(cityList.hasCity(city));
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            cityList.deleteCity(city);
+        });
+    }
 }
